@@ -3,6 +3,8 @@ title: Mods Registry Preferences
 lastmod: 2025-02-07
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+
 The `preferences.json` file allows mod developers to define custom preferences that control the behavior and appearance of mods in the Zen Browser. Each preference is defined with a `property`, a `label`, a `type`, and optionally `options` (for dropdown preferences), `defaultValue`, `placeholder` (to configure preference placeholder) and `disabledOn` (to disable property on selected OS). The `preferences.json` file contains a list of these preference objects at its root.
 
 ## Preferences fields
@@ -241,10 +243,12 @@ You can also have negative conditions
 
 ### Dropdown Preferences
 
-> [!attention] > `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
->
-> E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
-> This transformation ensures that the property can be used as an attribute selector or inside a media query.
+<Callout type="warn" title="Attention">
+  `property` fields defined in `preferences.json` using the `"dropdown"` type will have one key difference when used in your mod's CSS: <strong>dots (`.`) in the `property` name are replaced with hyphens (`-`)</strong>.
+  <br/><br/>
+  E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
+  This transformation ensures that the property can be used as an attribute selector or inside a media query.
+</Callout>
 
 For dropdown preferences, you can detect the selected value using the `:has(){:css}` CSS pseudo-class, which applies styles based on the selected attribute and value in the DOM.
 
@@ -353,10 +357,12 @@ This allows users to:
 
 String preferences can be detected in your CSS using the `var(--property)` operator. The preference property is saved at `:root` level.
 
-> [!attention] > `property` fields defined in `preferences.json` using the `"string"` type will have one key difference when used in your mod’s CSS: **dots (`.`) in the `property` name are replaced with hyphens (`-`)**.
->
-> E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
-> This transformation ensures that the property can be used as an attribute selector or inside a media query.
+<Callout type="warn" title="Attention">
+  `property` fields defined in `preferences.json` using the `"string"` type will have one key difference when used in your mod's CSS: <strong>dots (`.`) in the `property` name are replaced with hyphens (`-`)</strong>.
+  <br/><br/>
+  E.g. `mod.mymod.background_color` becomes `mod-mymod-background_color` in the CSS file.
+  This transformation ensures that the property can be used as an attribute selector or inside a media query.
+</Callout>
 
 For example, if you have a preference to enable dark mode in your mod:
 

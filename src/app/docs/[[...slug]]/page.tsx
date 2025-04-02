@@ -8,6 +8,7 @@ import {
 import { notFound } from "next/navigation";
 import defaultMdxComponents, { createRelativeLink } from "fumadocs-ui/mdx";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
+import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
@@ -29,6 +30,11 @@ export default async function Page(props: {
             // this allows you to link to other pages with relative file paths
             a: createRelativeLink(source, page),
             img: (props) => <ImageZoom {...(props as any)} />,
+            pre: ({ ref: _ref, ...props }) => (
+              <CodeBlock {...props}>
+                <Pre>{props.children}</Pre>
+              </CodeBlock>
+            ),
             // you can add other MDX components here
           }}
         />

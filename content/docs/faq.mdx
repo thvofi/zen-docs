@@ -3,6 +3,8 @@ title: FAQ
 lastmod: 2025-01-10
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+
 Welcome to the Zen Browser FAQ section! Here, you'll find answers to common questions and helpful tips to enhance your experience with Zen Browser. If your question isn't covered here, feel free to explore our community forums [r/zen_browser](https://www.reddit.com/r/zen_browser) or reach out to the support team.
 
 ## How can I use horizontal tabs?
@@ -15,30 +17,34 @@ At the moment, our team does not have the time or resources to develop Android o
 
 ## Why can't Zen Browser play DRM-protected content?
 
-> [!important] This only affects Microsoft Windows and MacOS
+<Callout type="warn">
+  This only affects Microsoft Windows and MacOS
+</Callout>
 
-> [!question]- What is DRM?
-> [Digital Rights Management](https://wikipedia.org/wiki/Digital_rights_management) (DRM) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website verifies if the necessary DRM software is available on your browser. Most browsers use [**Widevine**](https://www.widevine.com), a DRM technology developed by Google, to facilitate this.
+<Callout type="question" title="What is DRM?">
+  [Digital Rights Management](https://wikipedia.org/wiki/Digital_rights_management) (DRM) is a technology used to control how digital content, such as videos and music, can be accessed and used. DRM is commonly used by streaming services to protect copyrighted content. When you try to play DRM-protected content, the website verifies if the necessary DRM software is available on your browser. Most browsers use [**Widevine**](https://www.widevine.com), a DRM technology developed by Google, to facilitate this.
+</Callout>
 
 Zen Browser currently lacks DRM-support, because it does not have a Widevine license. Acquiring such a license requires the payment of large fees (at least $5,000). Acquiring this license is financially unresponsible for the developer of Zen. This means that DRM-protected media cannot be played in Zen Browser for the foreseeable future.
 We have to also consider that in order to be able to apply for this license, Zen must be a part of a company with size at least as big as Mozilla or Brave.
 
-> [!question]- Which Services Are Affected?
-> Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
->
-> - **HBO Max**
-> - **Netflix**
-> - **Spotify**
-> - **Disney+**
-> - **Amazon Prime Video**
-> - **Apple Music**
-> - **Google Play Movies & TV**
-> - **And possible other services that use DRM not listed here**
+<Callout type="question" title="Which Services Are Affected?">
+  Due to the lack of DRM support, you will not be able to stream content from the following services in Zen Browser:
+  
+  - **HBO Max**
+  - **Netflix**
+  - **Spotify**
+  - **Disney+**
+  - **Amazon Prime Video**
+  - **Apple Music**
+  - **Google Play Movies & TV**
+  - **And possible other services that use DRM not listed here**
+</Callout>
 
-> [!info] Alternative solutions
->
-> - Use a browser that has a Widevine license, such as [**Mozilla Firefox**](https://www.mozilla.org/firefox/), when streaming DRM-protected content.
-> - Use the native desktop app for the service you want to use
+<Callout type="info" title="Alternative solutions">
+  - Use a browser that has a Widevine license, such as [**Mozilla Firefox**](https://www.mozilla.org/firefox/), when streaming DRM-protected content.
+  - Use the native desktop app for the service you want to use
+</Callout>
 
 ## How do I know Zen is safe?
 
@@ -55,7 +61,9 @@ Your support helps the team maintain and enhance Zen Browser for everyone!
 
 ## How do I use the Split View feature?
 
-> [!hint] Use shortcuts to perform Split View actions faster!
+<Callout type="info" title="Tip">
+  Use shortcuts to perform Split View actions faster!
+</Callout>
 
 1. Select multiple tabs by left-clicking them while holding the `Ctrl` key, or left-click 2 tabs while holding the `Shift` key to select all tabs in between
 2. Right click a tab, and select `Split x Tabs`
@@ -73,7 +81,9 @@ Once this setting is enabled, you can hover your mouse over the tab bar and use 
 
 ## Where do report problems and bugs?
 
-> [!caution] New features are not bugs. Please see [Where do I recommend features?](#where-do-i-recommend-features) below
+<Callout type="info">
+New features are not bugs. Please see [Where do I recommend features?](#where-do-i-recommend-features) below
+</Callout>
 
 If you want report an issue or a bug with the browser, you can do so on the browser's GitHub page. Before submitting your request, it's mandatory to check if the issue has already been reported. You can do this by searching through existing issues on the [GitHub issues page](https://github.com/zen-browser/desktop/issues).
 
