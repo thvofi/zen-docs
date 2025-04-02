@@ -1,11 +1,12 @@
-import { defineDocs, defineConfig } from 'fumadocs-mdx/config';
+import { defineDocs, defineConfig } from "fumadocs-mdx/config";
+import { remarkMermaid } from "@theguild/remark-mermaid";
 
 export const docs = defineDocs({
-  dir: 'content/docs',
+  dir: "content/docs",
 });
 
 export default defineConfig({
   mdxOptions: {
-    // MDX options
+    remarkPlugins: [remarkMermaid],
   },
 });

@@ -1,13 +1,69 @@
 ---
-title: Hello World
-description: Your first document
+title: Intro
+description: Welcome to Zen Browser's Documentation
+lastmod: 2024-09-11
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+import { 
+  BuildingIcon,
+  BookIcon,
+  WrenchIcon,
+  PaletteIcon,
+  HelpCircleIcon,
+  BarChartIcon,
+  HeartIcon,
+  ShieldIcon
+} from 'lucide-react';
 
-## What is Next?
+Welcome to **Zen Browser's Documentation!** Here, you'll find everything you need to get the most out of your browsing experience. Dive in to explore how Zen can make your browsing more secure, private, and efficient.
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
+<Cards cols={2}>
+  <Card 
+    icon={<BuildingIcon />} 
+    title="Building Zen Browser" 
+    href="/docs/building" 
+    description="Build instructions and development guides" 
+  />
+  <Card 
+    icon={<BookIcon />} 
+    title="User Manual" 
+    href="/docs/user-manual" 
+    description="Complete user guide and features" 
+  />
+  <Card 
+    icon={<WrenchIcon />} 
+    title="Guides" 
+    href="/docs/guides" 
+    description="Tutorials and how-to guides" 
+  />
+  <Card 
+    icon={<PaletteIcon />} 
+    title="Mods Registry" 
+    href="/docs/themes-store" 
+    description="Custom themes and modifications" 
+  />
+  <Card 
+    icon={<HelpCircleIcon />} 
+    title="FAQ" 
+    href="/docs/faq" 
+    description="Frequently asked questions" 
+  />
+  <Card 
+    icon={<BarChartIcon />} 
+    title="Benchmarks" 
+    href="/docs/benchmarks" 
+    description="Performance comparisons" 
+  />
+  <Card 
+    icon={<HeartIcon />} 
+    title="Contribute" 
+    href="/docs/contribute" 
+    description="How to contribute to the project" 
+  />
+  <Card 
+    icon={<ShieldIcon />} 
+    title="Security" 
+    href="/docs/security" 
+    description="Security features and protocols" 
+  />
 </Cards>
