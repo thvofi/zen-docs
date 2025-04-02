@@ -5,6 +5,8 @@ lastmod: 2025-01-16
 ---
 
 import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { ArrowDownToLineIcon } from 'lucide-react';
 
 This Guide is designed to help you easily find and download the version of Zen Browser that best fits your operating system and hardware.
 
@@ -16,40 +18,94 @@ This Guide is designed to help you easily find and download the version of Zen B
 
 ## Windows 🪟
 
-- ### x86_64 💽
-
-  - [Installer 🚀](https://github.com/zen-browser/desktop/releases/latest/download/zen.installer.exe)
-
-- ### arm64 💻
-
-  - [Installer 🚀](https://github.com/zen-browser/desktop/releases/latest/download/zen.installer-arm64.exe)
+<Cards>
+  <Card
+    title="x86_64 Installer"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.installer.exe"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="arm64 Installer"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.installer-arm64.exe"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
 
 ## Linux 🐧
 
-- ### x86_64 💽
-  - [AppImage 🚀](https://github.com/zen-browser/desktop/releases/latest/download/zen-x86_64.AppImage)
-  - [Portable 📦 `tar.bz2`](https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-x86_64.tar.bz2)
-- ### aarch64 💻
+### x86_64 💽
 
-  - [AppImage 🚀](https://github.com/zen-browser/desktop/releases/latest/download/zen-aarch64.AppImage)
-  - [Portable 📦 `tar.bz2`](https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-aarch64.tar.bz2)
+<Cards>
+  <Card
+    title="AppImage"
+    href="https://github.com/zen-browser/desktop/releases/latest/download/zen-x86_64.AppImage"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="Portable `tar.bz2`"
+    href="https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-x86_64.tar.bz2"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
 
-- ### Package Managers
+### aarch64 💻
 
-  - [Arch User Repository 📂 `AUR`](https://aur.archlinux.org/packages/zen-browser-bin)
-  - [Pacstall `comunity`](https://pacstall.dev/packages/zen-browser-bin)
-  - [Flatpak 🌐](https://flathub.org/apps/io.github.zen_browser.zen)
-    ```bash
-    flatpak install flathub app.zen_browser.zen
-    ```
+<Cards>
+  <Card
+    title="AppImage"
+    href="https://github.com/zen-browser/desktop/releases/latest/download/zen-aarch64.AppImage"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="Portable `tar.bz2`"
+    href="https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-aarch64.tar.bz2"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
+
+### Package Managers
+
+<Cards>
+  <Card
+    title="Arch User Repository 📂 `AUR`"
+    href="https://aur.archlinux.org/packages/zen-browser-bin"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="Pacstall `comunity`"
+    href="https://pacstall.dev/packages/zen-browser-bin"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
+
+#### Flatpak
+```bash
+flatpak install flathub app.zen_browser.zen
+```
 
 ## MacOS 🍎
 
-- ### aarch64 (M-series chips) 💻
-  - [DMG File 🗂️](https://github.com/zen-browser/desktop/releases/latest/download/zen.macos-aarch64.dmg)
-- ### x86_64 (Intel chips) 💽
+### aarch64 (M-series chips) 💻
 
-  - [DMG File 🗂️](https://github.com/zen-browser/desktop/releases/latest/download/zen.macos-x86_64.dmg)
+<Cards>
+  <Card
+    title="DMG File"
+    href="https://github.com/zen-browser/desktop/releases/latest/download/zen.macos-aarch64.dmg"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
+
+### x86_64 (Intel chips) 💽
+
+<Cards>
+  <Card
+    title="DMG File"
+    href="https://github.com/zen-browser/desktop/releases/latest/download/zen.macos-x86_64.dmg"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
+
+---
 
 # Twilight
 
@@ -59,29 +115,86 @@ This Guide is designed to help you easily find and download the version of Zen B
 
 ## Windows 🪟
 
-- ### x86_64 💽
+### x86_64 💽
 
-  - [Installer 🚀](https://github.com/zen-browser/desktop/releases/download/twilight/zen.installer.exe)
-  - [Portable 📦 `zip`](https://github.com/zen-browser/desktop/releases/download/twilight/zen.win-x86_64.zip)
+<Cards>
+  <Card
+    title="Installer"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.installer.exe"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="Portable `zip`"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.win-x86_64.zip"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
 
-- ### arm64 💻
+### arm64 💻
 
-  - [Installer 🚀](https://github.com/zen-browser/desktop/releases/download/twilight/zen.installer-arm64.exe)
-  - [Portable 📦 `zip`](https://github.com/zen-browser/desktop/releases/download/twilight/zen.win-arm64.zip)
+<Cards>
+  <Card
+    title="Installer"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.installer-arm64.exe"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="Portable `zip`"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.win-arm64.zip"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
 
 ## Linux 🐧
 
-- ### x86_64 💽
-  - [AppImage 🚀](https://github.com/zen-browser/desktop/releases/download/twilight/zen-x86_64.AppImage)
-  - [Portable 📦 `tar.bz2`](https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-x86_64.tar.bz2)
-- ### aarch64 💻
-  - [AppImage 🚀](https://github.com/zen-browser/desktop/releases/download/twilight/zen-aarch64.AppImage)
-  - [Portable 📦 `tar.bz2`](https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-aarch64.tar.bz2)
+### x86_64 💽
+
+<Cards>
+  <Card
+    title="AppImage"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen-x86_64.AppImage"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="Portable `tar.bz2`"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-x86_64.tar.bz2"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
+
+### aarch64 💻
+
+<Cards>
+  <Card
+    title="AppImage"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen-aarch64.AppImage"
+    icon={<ArrowDownToLineIcon />}
+  />
+  <Card
+    title="Portable `tar.bz2`"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-aarch64.tar.bz2"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
 
 ## MacOS 🍎
 
-- ### aarch64 (M-series chips) 💻
-  - [DMG File 🗂️](https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-aarch64.dmg)
-- ### x86_64 (Intel chips) 💽
+### aarch64 (M-series chips) 💻
 
-  - [DMG File 🗂️](https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-x86_64.dmg)
+<Cards>
+  <Card
+    title="DMG File"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-aarch64.dmg"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
+
+### x86_64 (Intel chips) 💽
+
+<Cards>
+  <Card
+    title="DMG File"
+    href="https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-x86_64.dmg"
+    icon={<ArrowDownToLineIcon />}
+  />
+</Cards>
