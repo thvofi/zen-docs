@@ -27,15 +27,15 @@ export default async function Page(props: {
         <MDXContent
           components={{
             ...defaultMdxComponents,
-            // this allows you to link to other pages with relative file paths
             a: createRelativeLink(source, page),
-            img: (props) => <ImageZoom {...(props as any)} />,
-            pre: ({ ref: _ref, ...props }) => (
+            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+              <ImageZoom {...props} />
+            ),
+            pre: (props) => (
               <CodeBlock {...props}>
                 <Pre>{props.children}</Pre>
               </CodeBlock>
             ),
-            // you can add other MDX components here
           }}
         />
       </DocsBody>
