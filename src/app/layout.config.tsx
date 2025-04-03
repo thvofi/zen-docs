@@ -19,7 +19,7 @@ export const baseOptions: BaseLayoutProps = {
           aria-label="Logo"
           alt=""
         />
-        Zen Docs
+        zen docs
       </>
     ),
   },
