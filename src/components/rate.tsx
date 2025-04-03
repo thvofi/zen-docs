@@ -119,7 +119,7 @@ export function Rate({
             <button
               className={cn(
                 buttonVariants({
-                  color: "secondary",
+                  color: "outline",
                 }),
                 "text-xs"
               )}
