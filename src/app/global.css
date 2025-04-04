@@ -38,6 +38,6 @@
   --color-fd-border: #f76e530f;
 }
 
-.dark aside {
+aside {
   background-color: var(--color-fd-background) !important;
 }
