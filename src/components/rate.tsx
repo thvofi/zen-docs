@@ -132,7 +132,7 @@ export function Rate({
       </div>
       <CollapsibleContent className="mt-3">
         {previous ? (
-          <div className="px-3 py-6 flex flex-col items-center gap-3 bg-fd-card text-fd-card-foreground text-sm text-center rounded-xl text-fd-muted-foreground">
+          <div className="px-3 py-6 flex flex-col items-center gap-3 bg-card text-card-foreground text-sm text-center rounded-xl">
             <p>Thank you for your feedback!</p>
             <button
               className={cn(
@@ -156,7 +156,7 @@ export function Rate({
               autoFocus
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="border rounded-lg bg-fd-secondary text-fd-secondary-foreground p-3 resize-none focus-visible:outline-none placeholder:text-fd-muted-foreground"
+              className="border rounded-lg p-3 resize-none focus-visible:outline-none"
               placeholder="Leave your feedback..."
               onKeyDown={(e) => {
                 if (!e.shiftKey && e.key === "Enter") {
