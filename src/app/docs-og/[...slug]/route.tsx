@@ -6,6 +6,8 @@ export const GET = metadataImage.createAPI((page) => {
     title: page.data.title,
     description: page.data.description,
     site: "zen docs",
+    primaryColor: "#F76F53",
+    primaryTextColor: "#D1CFC0",
   });
 });
 
