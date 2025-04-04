@@ -15,9 +15,9 @@ export const baseOptions: BaseLayoutProps = {
         <Image
           width="24"
           height="24"
-          src="/icon.png"
+          src="/icon.svg"
           aria-label="Logo"
-          alt=""
+          alt="Logo"
         />
         zen docs
       </>

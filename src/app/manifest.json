@@ -1,5 +1,5 @@
 {
-  "name": "Zen Browser Docs",
+  "name": "Zen Docs",
   "short_name": "Zen Docs",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#F2F0E3",
+  "background_color": "#F2F0E3",
   "display": "standalone"
 }
