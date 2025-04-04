@@ -1,14 +1,12 @@
 import { metadataImage } from "@/lib/metadata";
 import { ImageResponse } from "next/og";
 
-export const alt = "About Acme";
-export const size = {
-  width: 1200,
-  height: 630,
-};
-export const contentType = "image/png";
-
 export const GET = metadataImage.createAPI(async (page) => {
+  const size = {
+    width: 1200,
+    height: 630,
+  };
+
   return new ImageResponse(
     (
       <div
@@ -23,7 +21,7 @@ export const GET = metadataImage.createAPI(async (page) => {
           paddingLeft: "40px",
           paddingRight: "40px",
           paddingTop: "20px",
-          paddingBottom: "60px",
+          paddingBottom: "70px",
         }}
       >
         <div>zen docs</div>
