@@ -1,9 +1,9 @@
 ---
-title: Getting Started
+title: Docs
 description: Getting started with contributing to the documentation for Zen Browser.
 ---
 
-This guide will help you get started with contributing to the documentation for Zen Browser. The documentation is crucial for helping users and developers understand and use the project effectively. We use Quartz v4 for generating the static documentation site, and we recommend using Obsidian as your Markdown editor for making contributions.
+This guide will help you get started with contributing to the documentation for Zen Browser. The documentation is crucial for helping users and developers understand and use the project effectively. We use Fumadocs for generating the static documentation site.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ Before you begin, ensure you have the following tools installed:
 - [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
 - [**Node.js**](https://nodejs.org/): Required for building the Quartz v4 site.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
-- [**Obsidian**](https://obsidian.md/): A powerful Markdown editor recommended for editing and organizing documentation. _(Optional)_
+- **IDE of your choice**: You can use any text editor or IDE of your choice.
 
 ## 1. Fork the Repository
 
@@ -40,21 +40,21 @@ npm install
 
 This command installs all the necessary packages listed in the `package.json` file.
 
-## 4. Open the Project in Obsidian
+## 4. Open the Project in IDE
 
-Open the cloned repository folder in Obsidian to begin editing:
+Open the cloned repository folder in your IDE to begin editing:
 
-1. Open Obsidian.
-2. Click on "Open folder as vault" and select the folder containing the cloned repository.
-3. You can now browse, edit, and add new Markdown files to the project.
+1. Open IDE.
+2. Select "Open Folder" or "File > Open Folder".
+3. Navigate to the cloned repository folder.
 
 ## 5. Make Your Changes
 
 You can now start editing the documentation. The project structure is as follows:
 
-- **`content/`** - contains the Markdown files for the documentation.
-- **`assets/`** - contains images and other static assets used in the documentation.
-- **`data/`** - contains any additional data files needed for the documentation.
+- **`content/docs/`** - contains the Markdown files for the documentation.
+- **`public/assets/`** - contains images and other static assets used in the documentation.
+- _**`src/`**_ - contains the source code for the documentation site. No changes are required here.
 
 ### Writing Guidelines
 
@@ -68,10 +68,14 @@ You can now start editing the documentation. The project structure is as follows
 To preview the documentation site locally, run the following command:
 
 ```bash
-npx quartz build --serve
+npm run dev
+# or
+pnpm dev
+# or
+yarn dev
 ```
 
-This command starts a local server and opens the documentation site in your default web browser. The site will automatically reload whenever you make changes to the Markdown files.
+This command starts a local server running on `http://localhost:3000` that you can access from your browser. The site will automatically reload whenever you make changes to the Markdown files.
 
 ## 7. Commit and Push Your Changes
 
@@ -103,7 +107,7 @@ Your pull request will be reviewed by the maintainers, and you may be asked to m
 ## Additional Resources
 
 - [Zen Browser Documentation Repository](https://github.com/zen-browser/docs)
-- [Quartz v4 Documentation](https://quartz.jzhao.xyz/)
+- [Fumadocs Documentation](https://fumadocs.vercel.app/docs/ui)
 - [Contribution Guidelines](/contribute/contributing)
 - [Code of Conduct](/contribute/code-of-conduct)
 
