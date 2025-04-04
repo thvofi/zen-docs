@@ -10,6 +10,8 @@ import {
 import { cva } from "class-variance-authority";
 import { usePathname } from "next/navigation";
 import { cn } from "fumadocs-ui/components/api";
+import { Github } from "lucide-react";
+import Link from "next/link";
 
 const rateButtonVariants = cva(
   "inline-flex items-center gap-2 px-3 py-2 rounded-full font-medium border text-sm [&_svg]:size-4 disabled:cursor-not-allowed cursor-pointer hover:bg-fd-muted hover:text-fd-muted-foreground",
@@ -83,6 +85,7 @@ export function Rate({
     >
       <div className="flex flex-row items-center gap-2">
         <p className="text-sm font-medium pe-2">How is this guide?</p>
+
         <button
           disabled={previous !== null}
           className={cn(
@@ -111,6 +114,21 @@ export function Rate({
           <ThumbsDown />
           Bad
         </button>
+
+        <Link
+          href={`https://github.com/list-jonas/zen-docs/edit/main/content/docs${url}.mdx`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={cn(
+            rateButtonVariants({
+              active: false,
+            }),
+            "ml-auto"
+          )}
+        >
+          <Github className="size-4" />
+          Edit on GitHub
+        </Link>
       </div>
       <CollapsibleContent className="mt-3">
         {previous ? (
