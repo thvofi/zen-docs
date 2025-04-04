@@ -43,10 +43,14 @@ aside {
 }
 
 aside a[data-active="true"] {
-  color: var(--color-fd-foreground)!important;
-  background-color: var(--color-fd-accent)!important;
+  color: var(--color-fd-foreground) !important;
+  background-color: var(--color-fd-accent) !important;
 }
 
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   font-size: 14px;
+}
+
+g.main:has(> g.plot) > rect {
+  display: none;
 }
