@@ -10,7 +10,7 @@ export default function NotFound() {
             404
           </h1>
           <p className="text-gray-500">
-            Looks like you've ventured into the unknown digital realm.
+            Looks like you&apos;ve ventured into the unknown digital realm.
           </p>
         </div>
         <Link
