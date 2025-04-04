@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://zen-docs-nine.vercel.app/sitemap.xml
