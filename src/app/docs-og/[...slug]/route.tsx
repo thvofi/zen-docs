@@ -18,13 +18,13 @@ export const GET = metadataImage.createAPI(async (page) => {
           color: "#F2F0E3",
           display: "flex",
           flexDirection: "column",
-          paddingLeft: "40px",
-          paddingRight: "40px",
-          paddingTop: "20px",
-          paddingBottom: "70px",
+          paddingLeft: "80px",
+          paddingRight: "80px",
         }}
       >
-        <div>zen docs</div>
+        <div style={{ position: "absolute", left: "80px", top: "60px" }}>
+          zen docs
+        </div>
         <div
           style={{
             display: "flex",
