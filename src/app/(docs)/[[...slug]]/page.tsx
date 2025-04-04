@@ -11,6 +11,7 @@ import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
 import { Rate } from "@/components/rate";
 import { onRateAction } from "@/lib/github";
+import { metadataImage } from "@/lib/metadata";
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
@@ -63,8 +64,8 @@ export async function generateMetadata(props: {
   const page = source.getPage(params.slug);
   if (!page) notFound();
 
-  return {
+  return metadataImage.withImage(page.slugs, {
     title: page.data.title,
     description: page.data.description,
-  };
+  });
 }
