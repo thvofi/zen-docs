@@ -18,11 +18,11 @@
   --color-fd-secondary-foreground: #2E2E2E;
   --color-fd-popover: #F2F0E3;
   --color-fd-popover-foreground: #2E2E2E;
-  --color-fd-border: #f76e530f;
+  --color-fd-border: #EAE9E2;
 }
  
 .dark {
-  --color-fd-background: #202020;
+  --color-fd-background: #1F1F1F;
   --color-fd-foreground: #D1CFC0;
   --color-fd-primary: #F76F53;
   --color-fd-accent: #363636;
@@ -33,9 +33,9 @@
   --color-fd-muted-foreground: #D1CFC0c5;
   --color-fd-secondary: #363636;
   --color-fd-secondary-foreground: #2E2E2E;
-  --color-fd-popover: #202020;
+  --color-fd-popover: #1F1F1F;
   --color-fd-popover-foreground: #D1CFC0;
-  --color-fd-border: #f76e530f;
+  --color-fd-border: #2E2E2E;
 }
 
 aside {
