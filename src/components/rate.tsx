@@ -12,7 +12,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "fumadocs-ui/components/api";
 
 const rateButtonVariants = cva(
-  "inline-flex items-center gap-2 px-3 py-2 rounded-full font-medium border text-sm [&_svg]:size-4 disabled:cursor-not-allowed",
+  "inline-flex items-center gap-2 px-3 py-2 rounded-full font-medium border text-sm [&_svg]:size-4 disabled:cursor-not-allowed cursor-pointer",
   {
     variants: {
       active: {
