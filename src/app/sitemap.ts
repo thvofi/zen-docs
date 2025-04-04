@@ -1,13 +1,22 @@
 import type { MetadataRoute } from "next";
 import { source } from "@/lib/source";
 
+interface TreeNode {
+  $id: string;
+  type?: string;
+  name?: string;
+  url?: string;
+  index?: TreeNode;
+  children?: TreeNode[];
+}
+
 function generateSitemap(
-  root: any,
+  root: TreeNode,
   baseUrl: string = "https://zen-docs-nine.vercel.app"
 ): MetadataRoute.Sitemap {
   const sitemap: MetadataRoute.Sitemap = [];
 
-  function traverse(node: any): void {
+  function traverse(node: TreeNode): void {
     if (!node) return;
 
     // If the node is a page and has a URL, add it to the sitemap.
@@ -36,7 +45,7 @@ function generateSitemap(
 
     // Recursively process children if any.
     if (node.children && node.children.length) {
-      node.children.forEach((child: any) => traverse(child));
+      node.children.forEach((child) => traverse(child));
     }
   }
 
@@ -45,5 +54,5 @@ function generateSitemap(
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return generateSitemap(source.pageTree);
+  return generateSitemap(source.pageTree as TreeNode);
 }
