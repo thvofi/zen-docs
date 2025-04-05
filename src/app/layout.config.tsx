@@ -23,5 +23,5 @@ export const baseOptions: BaseLayoutProps = {
       </>
     ),
   },
-  links: [],
+  githubUrl: "https://github.com/list-jonas/zen-docs",
 };

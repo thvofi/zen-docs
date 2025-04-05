@@ -9,9 +9,8 @@ import { notFound } from "next/navigation";
 import defaultMdxComponents, { createRelativeLink } from "fumadocs-ui/mdx";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
-import { Rate } from "@/components/rate";
-import { onRateAction } from "@/lib/github";
 import { metadataImage } from "@/lib/metadata";
+import Footer from "@/components/footer";
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
@@ -42,13 +41,7 @@ export default async function Page(props: {
           }}
         />
       </DocsBody>
-      <Rate
-        onRateAction={async (url, feedback) => {
-          "use server";
-
-          await onRateAction(url, feedback);
-        }}
-      />
+      <Footer />
     </DocsPage>
   );
 }

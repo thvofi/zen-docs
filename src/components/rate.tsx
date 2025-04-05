@@ -115,7 +115,7 @@ export function Rate({
           Bad
         </button>
 
-        <Link
+        {/* <Link
           href={`https://github.com/list-jonas/zen-docs/edit/main/content/docs${url}.mdx`}
           target="_blank"
           rel="noopener noreferrer"
@@ -128,7 +128,7 @@ export function Rate({
         >
           <Github className="size-4" />
           Edit on GitHub
-        </Link>
+        </Link> */}
       </div>
       <CollapsibleContent className="mt-3">
         {previous ? (
