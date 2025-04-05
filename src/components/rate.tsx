@@ -123,7 +123,7 @@ export function Rate({
             rateButtonVariants({
               active: false,
             }),
-            "ml-auto"
+            "ml-auto hidden md:flex min-w-max"
           )}
         >
           <Github className="size-4" />
