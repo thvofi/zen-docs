@@ -54,3 +54,7 @@ aside a[data-active="true"] {
 g.main:has(> g.plot) > rect {
   display: none;
 }
+
+video {
+  border-radius: 40px;
+}
