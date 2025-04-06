@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { source } from "@/lib/source";
 
+export const dynamic = "force-static";
+
 interface TreeNode {
   $id: string;
   type?: string;
