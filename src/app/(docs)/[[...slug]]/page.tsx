@@ -10,7 +10,6 @@ import defaultMdxComponents, { createRelativeLink } from "fumadocs-ui/mdx";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
 import { metadataImage } from "@/lib/metadata";
-import Footer from "@/components/footer";
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
@@ -41,7 +40,6 @@ export default async function Page(props: {
           }}
         />
       </DocsBody>
-      <Footer />
     </DocsPage>
   );
 }
@@ -60,5 +58,9 @@ export async function generateMetadata(props: {
   return metadataImage.withImage(page.slugs, {
     title: page.data.title,
     description: page.data.description,
+    metadataBase:
+      process.env.NODE_ENV === "production"
+        ? new URL("https://zendocs.listjonas.com")
+        : undefined,
   });
 }
